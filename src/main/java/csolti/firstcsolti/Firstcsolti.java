@@ -12,21 +12,25 @@ public class Firstcsolti {
     System.out.println("eredeti: ");    
         
     int [] eredeti = {0,1,2,3};
-    kiirTomb(eredeti);
-    valtoztat(eredeti);
+    String szoveg = "ez az eredeti";
+    int szam = 7;
+    kiiro(eredeti, szoveg, szam);
+    valtoztato(eredeti, szoveg, szam);
     System.out.println("változatás után: ");
-    kiirTomb(eredeti);   
+    kiiro(eredeti,szoveg, szam);   
     }
     
-    private static void kiirTomb(int [] Tomb){
+    private static void kiiro(int [] Tomb, String s, int i){
         for (int szam : Tomb){
-            System.out.println(szam + " ");
+            System.out.print(szam + " ");
         }
-        System.out.println("");
+        System.out.print("s:"+ s + "i" + i);
     }
 
-    private static void valtoztat(int[] Tomb) {
+    private static void valtoztato(int[] Tomb, String s,int i) {
         Tomb[0]=100;
+        s = "---";
+        i = 100;
     }
     
     
